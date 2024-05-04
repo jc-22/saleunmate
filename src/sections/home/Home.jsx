@@ -50,13 +50,19 @@ function Home() {
         alignItems="center"
         flexDirection="column"
         gap="3rem"
-        paddingY="2rem"
+        padding="2rem"
       >
         <LogoMate/>
-        <Suspense fallback={<CircularProgress />}>
-          <h1>{frase.frase}</h1>
-          <p>Autor: {frase.autor}</p>
-        </Suspense>
+        <Box 
+          height="300px"
+          display="flex"
+          flexDirection="column"
+        >
+          <Suspense fallback={<CircularProgress />}>
+            <h1>{frase.frase}</h1>
+            <p>Autor(?: {frase.autor}</p>
+          </Suspense>
+        </Box>
         <Button
           style={buttonStyle}
           startIcon={<ReplayIcon />}
