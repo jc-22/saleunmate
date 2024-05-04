@@ -14,7 +14,7 @@ function AboutMe() {
                 alignItems="center"
                 flexDirection="column"
                 gap="3rem"
-                pt="2rem"
+                paddingY="2rem"
             >
                 <LogoMate/>
                 <Box display="flex" justifyContent="space-around" sx={{

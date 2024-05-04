@@ -50,7 +50,7 @@ function Home() {
         alignItems="center"
         flexDirection="column"
         gap="3rem"
-        pt="2rem"
+        paddingY="2rem"
       >
         <LogoMate/>
         <Suspense fallback={<CircularProgress />}>
