@@ -29,7 +29,7 @@ function AboutThis() {
                     <Box display="flex" alignContent="center" textAlign="start" paddingX="4rem">
                         El Back está hecho en Node con el framework Serverless, el mismo está deployado en AWS Lambda, las frases se guardan en AWS DynamoDB, y las imágenes están subidas a AWS S3.
                         <br/>
-                        El Front está desarrollado con React mediante Vite, utilizando Material UI, y el mismo está deployado en GitHub.
+                        El Front está desarrollado con React mediante Vite, utilizando Material UI, y el mismo está deployado en GitHub Pages con GitHub Actions.
                     </Box>
                 </Box>
             </Box>
