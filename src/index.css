@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+  font-family: 'Marcellus', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #294624;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.MuiButton-root,
+.MuiButton-root.MuiButton-contained,
+.MuiButton-root.MuiButton-outlined,
+.MuiButton-root.MuiButton-text {
+  font-family: 'Marcellus', sans-serif !important;
+}

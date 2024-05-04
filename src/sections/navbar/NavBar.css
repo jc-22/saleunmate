@@ -1,0 +1,7 @@
+.guarda {
+    background-image: url('/src/public/images/guarda.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 50px;
+    width: 100%;
+    height: 50px;
+}
