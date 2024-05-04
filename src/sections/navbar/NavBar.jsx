@@ -1,5 +1,5 @@
 import { Box, Button, useMediaQuery } from "@mui/material";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 
 const buttonStyle = {
@@ -7,6 +7,11 @@ const buttonStyle = {
     borderColor: '#fff',
     width: '170px',
 };
+
+const linkButtonStyle = {
+    textDecoration: 'none',
+    color: 'inherit',
+  };
 
 function NavBar() {
     const isLargeScreen = useMediaQuery('(min-width:600px)');
@@ -22,30 +27,28 @@ function NavBar() {
             }}>
                 {pathname !== '/this' && (
                     <div>
-                        <Button variant="outlined" href="/this" style={buttonStyle}>
-                            Sobre este sitio
+                        <Button variant="outlined" style={buttonStyle}>
+                            <Link to="/this" style={linkButtonStyle} >Sobre este sitio</Link>
                         </Button>
                     </div>
                 )}
                 {pathname !== '/' && (
                     <div>
-                        <Button variant="outlined" href="/" style={buttonStyle}>
-                            Home
+                        <Button variant="outlined" style={buttonStyle}>
+                            <Link to="/" style={linkButtonStyle} >Home</Link>
                         </Button>
                     </div>
                 )}
                 {pathname !== '/me' && (
                     <div>
-                        <Button variant="outlined" href="/me" style={buttonStyle}>
-                            Sobre mi
+                        <Button variant="outlined" style={buttonStyle}>
+                            <Link to="/me" style={linkButtonStyle} >Sobre mí</Link>
                         </Button>
                     </div>
                 )}
             </Box>
             <div className="guarda">
-
             </div>
-            {/* <img src="src/public/images/guarda.jpg" /> */}
         </Box>
     )
 }
