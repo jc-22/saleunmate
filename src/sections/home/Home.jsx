@@ -54,13 +54,12 @@ function Home() {
       >
         <LogoMate/>
         <Box 
-          height="300px"
+          height="250px"
           display="flex"
           flexDirection="column"
         >
           <Suspense fallback={<CircularProgress />}>
             <h1>{frase.frase}</h1>
-            <p>Autor(?: {frase.autor}</p>
           </Suspense>
         </Box>
         <Button
