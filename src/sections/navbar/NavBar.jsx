@@ -11,7 +11,7 @@ const buttonStyle = {
 const linkButtonStyle = {
     textDecoration: 'none',
     color: 'inherit',
-  };
+};
 
 function NavBar() {
     const isLargeScreen = useMediaQuery('(min-width:600px)');
@@ -27,23 +27,29 @@ function NavBar() {
             }}>
                 {pathname !== '/this' && (
                     <div>
-                        <Button variant="outlined" style={buttonStyle}>
-                            <Link to="/this" style={linkButtonStyle} >Sobre este sitio</Link>
-                        </Button>
+                        <Link to="/this" style={linkButtonStyle} >
+                            <Button variant="outlined" style={buttonStyle}>
+                                Sobre este sitio
+                            </Button>
+                        </Link>
                     </div>
                 )}
                 {pathname !== '/' && (
                     <div>
-                        <Button variant="outlined" style={buttonStyle}>
-                            <Link to="/" style={linkButtonStyle} >Home</Link>
-                        </Button>
+                        <Link to="/" style={linkButtonStyle} >
+                            <Button variant="outlined" style={buttonStyle}>
+                                Home
+                            </Button>
+                        </Link>
                     </div>
                 )}
                 {pathname !== '/me' && (
                     <div>
-                        <Button variant="outlined" style={buttonStyle}>
-                            <Link to="/me" style={linkButtonStyle} >Sobre mí</Link>
-                        </Button>
+                        <Link to="/me" style={linkButtonStyle} >
+                            <Button variant="outlined" style={buttonStyle}>
+                                Sobre mí
+                            </Button>
+                        </Link>
                     </div>
                 )}
             </Box>
