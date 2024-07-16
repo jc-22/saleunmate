@@ -2,13 +2,11 @@ import "./LogoMate.css";
 
 function LogoMate() {
     return (
-        <>
-            <img
-                src={import.meta.env.VITE_GET_LOGO_MATE}
-                className="logo"
-                alt="Mate logo"
-            />
-        </>
+        <img
+            src="/saleunmate/src/public/images/mate_sinfondo.png"
+            className="logo"
+            alt="Mate logo"
+        />
     )
 }
 
