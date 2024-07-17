@@ -1,9 +1,10 @@
 import "./LogoMate.css";
+import mateImage from "@/public/images/mate_sinfondo.png";
 
 function LogoMate() {
     return (
         <img
-            src="/saleunmate/src/public/images/mate_sinfondo.png"
+            src={mateImage}
             className="logo"
             alt="Mate logo"
         />
