@@ -45,7 +45,7 @@ function Home() {
   }
 
   function handleKeyPress(event) {
-    if ([13, 32].includes(event?.keyCode)) {
+    if ([13, 32].includes()) {
       setPhrase(getRandomPhrase());
     }
     if ([38, 39].includes(event?.keyCode)) {
@@ -73,12 +73,27 @@ function Home() {
         flexDirection="column"
         gap="3rem"
         padding="2rem"
+        sx={{
+          '@media screen and (max-width:1366px)': {
+            gap: '2rem',
+          },
+        }}
       >
         <LogoMate />
         <Box
-          height="250px"
           display="flex"
           flexDirection="column"
+          height='350px'
+          justifyContent="center"
+          sx={{
+
+            '@media screen and (max-width:1366px)': {
+              height: '150px',
+            },
+            '@media screen and (max-width:1080px)': {
+              height: '250px',
+            },
+          }}
         >
           <h1>{phrase}</h1>
         </Box>
