@@ -5,7 +5,7 @@ import ShuffleTwoToneIcon from '@mui/icons-material/ShuffleTwoTone'; import "./H
 import LogoMate from "../logomate/LogoMate";
 import { PHRASES } from "../../libs/phrases.js"
 import AboutMe from "../aboutme/AboutMe.jsx";
-import Guarda from "../Guarda/Guarda.jsx";
+import Guarda from "../guarda/Guarda.jsx";
 
 const buttonStyle = {
   backgroundColor: "#fff",
@@ -80,7 +80,7 @@ function Home() {
           display="flex"
           flexDirection="column"
         >
-          <h1>{phrase}</h1>
+          <h1 id="phrase">{phrase}</h1>
         </Box>
         <Box gap={0.5} display="flex">
           <IconButton
