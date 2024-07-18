@@ -5,7 +5,7 @@ export const PHRASES = [
   "Hoy salen unos Matthew Perry",
   "Hacete un el Mateó a un Policía Motorizado",
   "Hago unos Maturkish Airlines",
-  "Juega Mateos Messi?",
+  "Juega unos Mateos Messi?",
   "Armate unos Chotto Matte",
   "Esta para unos Amateurs",
   "Esperáme con esos Matienzos",
@@ -39,4 +39,5 @@ export const PHRASES = [
   "Salen unos Mátines",
   "Sale un matine",
   "Hacete unos lavados",
+  "Juega unos Mategol?",
 ];

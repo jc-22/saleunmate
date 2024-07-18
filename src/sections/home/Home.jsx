@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Box, Button, IconButton } from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
@@ -5,7 +7,7 @@ import ShuffleTwoToneIcon from '@mui/icons-material/ShuffleTwoTone'; import "./H
 import LogoMate from "../logomate/LogoMate";
 import { PHRASES } from "../../libs/phrases.js"
 import AboutMe from "../aboutme/AboutMe.jsx";
-import Guarda from "../Guarda/Guarda.jsx";
+import Guarda from "../guarda/Guarda.jsx";
 
 const buttonStyle = {
   backgroundColor: "#fff",
@@ -95,18 +97,20 @@ function Home() {
             },
           }}
         >
-          <h1>{phrase}</h1>
+          <h1 id="phrase">{phrase}</h1>
         </Box>
         <Box gap={0.5} display="flex">
           <IconButton
+            id="leftIconButton"
             style={buttonStyle}
             onClick={() => {
               setPhrase(getContinuousPhrase("back"));
             }}
           >
-            <ArrowRightAltIcon style={{ transform: 'rotate(180deg)' }} />
+            <ArrowRightAltIcon id="leftIcon" style={{ transform: 'rotate(180deg)' }} />
           </IconButton>
           <Button
+            id="randomButton"
             style={buttonStyle}
             startIcon={<ShuffleTwoToneIcon />}
             onClick={() => {
@@ -116,12 +120,13 @@ function Home() {
             random
           </Button>
           <IconButton
+            id="rightIconButton"
             style={buttonStyle}
             onClick={() => {
               setPhrase(getContinuousPhrase("next"));
             }}
           >
-            <ArrowRightAltIcon />
+            <ArrowRightAltIcon id="rightIcon" />
           </IconButton>
         </Box>
         <AboutMe />
