@@ -45,7 +45,7 @@ function Home() {
   }
 
   function handleKeyPress(event) {
-    if ([13, 32].includes()) {
+    if ([13, 32].includes(event?.keyCode)) {
       setPhrase(getRandomPhrase());
     }
     if ([38, 39].includes(event?.keyCode)) {
