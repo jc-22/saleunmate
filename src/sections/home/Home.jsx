@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Box, Button, IconButton } from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
@@ -84,14 +86,16 @@ function Home() {
         </Box>
         <Box gap={0.5} display="flex">
           <IconButton
+            id="leftIconButton"
             style={buttonStyle}
             onClick={() => {
               setPhrase(getContinuousPhrase("back"));
             }}
           >
-            <ArrowRightAltIcon style={{ transform: 'rotate(180deg)' }} />
+            <ArrowRightAltIcon id="leftIcon" style={{ transform: 'rotate(180deg)' }} />
           </IconButton>
           <Button
+            id="randomButton"
             style={buttonStyle}
             startIcon={<ShuffleTwoToneIcon />}
             onClick={() => {
@@ -101,12 +105,13 @@ function Home() {
             random
           </Button>
           <IconButton
+            id="rightIconButton"
             style={buttonStyle}
             onClick={() => {
               setPhrase(getContinuousPhrase("next"));
             }}
           >
-            <ArrowRightAltIcon />
+            <ArrowRightAltIcon id="rightIcon" />
           </IconButton>
         </Box>
         <AboutMe />
